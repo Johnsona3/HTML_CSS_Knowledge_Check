@@ -1,0 +1,32 @@
+body {
+  min-height: 100vh;
+  background: linear-gradient(
+    to bottom right,
+    rgb(247, 128, 128),
+    rgb(250, 220, 220)
+  );
+}
+table {
+  border-collapse: collapse;
+  border: 2px solid black;
+  font-family: sans-serif;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+thead,
+tfoot {
+  background-color: lightgray;
+}
+th,
+td {
+  background-color: lightgray;
+  border: 1px solid black;
+  padding: 8px 10px;
+}
+form {
+  max-width: max-content;
+}
+img {
+  border-radius: 8px;
+}
