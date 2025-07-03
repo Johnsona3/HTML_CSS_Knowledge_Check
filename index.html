@@ -1,97 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!--Head contains the meta data for the site-->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Module 1 HTML Assignment</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
-    <div>
-      <img src="https://placehold.co/300x200/" />
-      <img
-        src="https://wallpapers.com/images/hd/code-letters-screen-blur-colorful-lettering-signs-a66mr5vhbfsb8yod.webp"
-        width="1000"
-        height="300"
-      />
-    </div>
-    <div>
-      <form>
-        <h2>Contact Form</h2>
-        <input type="text" placeholder="First Name" />
-        <input type="text" placeholder="Last Name" />
-        <input type="email" placeholder="Enter Email" />
-        <fieldset>
-          <div>
-            <input
-              type="radio"
-              id="google"
-              name="siteReference"
-              value="google"
-            />
-            <label for="google">Google</label>
-          </div>
-          <div>
-            <input
-              type="radio"
-              id="facebook"
-              name="siteReference"
-              value="facebook"
-            />
-            <label for="facebook">FaceBook</label>
-          </div>
-          <div>
-            <input
-              type="radio"
-              id="linkedin"
-              name="siteReference"
-              value="linkedin"
-            />
-            <label for="linkedin">LinkedIn</label>
-          </div>
-        </fieldset>
-        <textarea placeholder="Message"></textarea>
-        <button>Submit</button>
-      </form>
-    </div>
-    <div>
-      <table>
-        <thead>
-          <tr>
-            <th scope="col">Product Name</th>
-            <th scope="col">Quantity</th>
-            <th scope="col">Price</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Milk</td>
-            <td>4</td>
-            <td>$8.99</td>
-          </tr>
-          <tr>
-            <td>Eggs</td>
-            <td>3</td>
-            <td>$12.99</td>
-          </tr>
-          <tr>
-            <td>Cookies</td>
-            <td>9</td>
-            <td>$4.99</td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <th scope="row" colspan="2">Total:</th>
-          <td>$119.84</td>
-        </tfoot>
-      </table>
-    </div>
+    <header>
+      <nav>
+        <ul>
+          <li><a herf="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li style="float: right"><a href="#help">Help</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="pictures">
+        <!--ID names were given to sections to allow access to each section in CSS. Width and height were used for the second picture to reduce the size of the image from its orignal form -->
+        <img src="https://placehold.co/300x200/" />
+        <!-- <img
+          src="https://wallpapers.com/images/hd/code-letters-screen-blur-colorful-lettering-signs-a66mr5vhbfsb8yod.webp"
+          width="1000"
+          height="300"
+        /> -->
+      </section>
+      <section id="contactForm">
+        <form>
+          <h2 style="text-align: center">Contact Form</h2>
+          <!-- I added placeholders to the input/text lines so page visitors would know what each box is asking of them-->
+          <input type="text" placeholder="First Name" />
+          <input type="text" placeholder="Last Name" />
+          <input type="email" placeholder="Enter Email" />
+          <fieldset>
+            <!--Feildset was used to group radio inputs and labels into a single box. This also allowed me to dictate the size of the radio input-->
+            <section>
+              <legend>How did you find this webpage?</legend>
+              <!--I added a legend so the visitor would know why they are selecting from a list-->
+              <input
+                type="radio"
+                id="google"
+                name="siteReference"
+                value="google"
+              />
+              <label for="google">Google</label>
+              <!--The FOR allows me to connect the label to the input also allows the visitor to select either the bubble or the text itself-->
+            </section>
+            <section>
+              <input
+                type="radio"
+                id="facebook"
+                name="siteReference"
+                value="facebook"
+              />
+              <label for="facebook">FaceBook</label>
+            </section>
+            <section>
+              <input
+                type="radio"
+                id="linkedin"
+                name="siteReference"
+                value="linkedin"
+              />
+              <label for="linkedin">LinkedIn</label>
+            </section>
+          </fieldset>
+          <textarea placeholder="Message"></textarea>
+          <button>Submit</button>
+        </form>
+      </section>
+      <section id="table">
+        <table>
+          <thead id="theader">
+            <!--THEAD was used to encase the table headers for the table-->
+            <tr>
+              <th>Product Name</th>
+              <th>Quantity</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody id="tbody">
+            <tr>
+              <td>Milk</td>
+              <td>4</td>
+              <td>$8.99</td>
+            </tr>
+            <tr>
+              <td>Eggs</td>
+              <td>3</td>
+              <td>$12.99</td>
+            </tr>
+            <tr>
+              <td>Cookies</td>
+              <td>9</td>
+              <td>$4.99</td>
+            </tr>
+          </tbody>
+          <tfoot id="tfooter">
+            <th scope="row" colspan="2">Total:</th>
+            <!--colspan expands the row to fill 2 cells-->
+            <td>$119.84</td>
+          </tfoot>
+        </table>
+      </section>
+    </main>
+    <footer></footer>
   </body>
   <link rel="stylesheet" type="text/css" href="style.css" />
+  <!--This is linking the CSS file to the HTML file-->
 </html>

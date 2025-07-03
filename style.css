@@ -1,11 +1,31 @@
 body {
   min-height: 100vh;
-  background: linear-gradient(
-    to bottom right,
-    rgb(247, 128, 128),
-    rgb(250, 220, 220)
-  );
+  background-image: url("https://wallpapers.com/images/hd/code-letters-screen-blur-colorful-lettering-signs-a66mr5vhbfsb8yod.webp");
 }
+/* In the body I added vh attribute and I added an image for the background*/
+ul {
+  list-style-type: none;
+  margin: 5px;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.388);
+}
+/* list-style-type removes the bullet points from the unordered list */
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/*float function allows the text to be positioned at the top left of the webpage.*/
+li a:hover {
+  background-color: rgba(0, 191, 255, 0.526);
+}
+/* a:hover changes the color of the nav buttons as the visitor hovers over the links */
 table {
   border-collapse: collapse;
   border: 2px solid black;
@@ -13,20 +33,33 @@ table {
   font-size: 1rem;
   letter-spacing: 1px;
 }
-
-thead,
-tfoot {
-  background-color: lightgray;
-}
 th,
 td {
   background-color: lightgray;
   border: 1px solid black;
   padding: 8px 10px;
+  text-align: center;
 }
 form {
+  border: 2px solid black;
+  background-color: rgba(211, 211, 211, 0.362);
   max-width: max-content;
+  border-radius: 10px;
+  border-style: inset;
+}
+textarea {
+  margin: 3px;
+  max-width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+  resize: none;
+}
+/* added an attribute of resize to turn off the ability of the visitor to resize the text area */
+fieldset {
+  border: 0;
 }
 img {
   border-radius: 8px;
 }
+/* Border-radius rounds the edges of the placeholder image*/
